@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AntsVsBees"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AntsVsBees">
+				<Option output="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/AntsVsBees.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 AntsVsBees"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AntsVsBees/fast">
+				<Option output="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/AntsVsBees.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 AntsVsBees/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;G:/Users/Josh/Documents/Development/AntsVsBees/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Bodyguard.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Bodyguard.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Fire.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Fire.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Harvester.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Harvester.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_LongThrow.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_LongThrow.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Ninja.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Ninja.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_ShortThrow.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_ShortThrow.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Thrower.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Thrower.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Wall.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Ant_Wall.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/AntsVsBees.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/AntsVsBees.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Bee.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Bee.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Bug.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/Bug.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/BugBoard.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/BugBoard.h">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/main.cpp">
+			<Option target="AntsVsBees"/>
+		</Unit>
+		<Unit filename="G:/Users/Josh/Documents/Development/AntsVsBees/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
