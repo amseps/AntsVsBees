@@ -18,6 +18,7 @@ private:
     void options();
     bool isGameOver();
     void newBee();
+    void makeANewBugOfTypeAt(Bug::bugID bugType, int position);
 
     int input_getLineInt();
 

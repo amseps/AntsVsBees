@@ -8,6 +8,7 @@
 using namespace std;
 
 //blessed be my circular logic
+class Bug;
 class BugBoard;
 class Ant_Fire; // what a fool I am
 class Ant_LongThrow;
@@ -20,7 +21,7 @@ class Ant_Wall;
 class Ant_Wall;
 class Ant;
 class Bee;
-//class AntsVsBees;
+class AntsVsBees;
 
 #include "Ant.h"
 #include "Ant_Fire.h"
@@ -41,9 +42,9 @@ public:
     static const int boardSize = 10;
     static vector<vector<Bug*>> bugBoard;
     static int antFood;
-    Bug* isBodyguardHere(int index);
-    Bug* isBeeHere(int index);
-    Bug* isAntHere(int index);
+    static Bug* isBodyguardHere(int index);
+    static Bug* isBeeHere(int index);
+    static Bug* isAntHere(int index);
 
     static void listItems();
     BugBoard();

@@ -11,11 +11,12 @@ Bug::Bug() {
 }
 
 void Bug::takeDamage(int dam){
+    std::cout << "*HIT: " << dam << "*";
     armor -= dam;
-    if(dam <=0) die();
+    if(armor <=0) die();
 }
 void Bug::die() {
-
+    // can't include bugboard hmm can't fix hmm
 }
 
 std::string Bug::print() {

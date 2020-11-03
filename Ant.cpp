@@ -10,4 +10,9 @@ Ant::Ant() {
 }
 
 void Ant::die(){
+    std::cout << "[ANT:DIE]";
+}
+
+Ant::~Ant() {
+
 }

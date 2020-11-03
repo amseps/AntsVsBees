@@ -8,7 +8,10 @@
 class AntsVsBees;
 class BugBoard;
 
+//class Bug;
 //#include "BugBoard.h"
+
+#include <iostream>
 #include "string"
 #include "vector"
 

@@ -10,12 +10,18 @@ class BugBoard;
 #include "Ant.h"
 
 class Ant_Bodyguard : public Ant{
-    Ant_Bodyguard();
     ~Ant_Bodyguard();
     Ant_Bodyguard & operator=(Ant_Bodyguard & right);
 
+    void die() override ;
+
     void attack() override;
     std::string print() override;
+
+public:
+    Ant_Bodyguard();
+    Ant_Bodyguard(int pos);
+    static const int cost = 4;
 };
 
 

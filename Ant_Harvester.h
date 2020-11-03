@@ -9,12 +9,19 @@
 #include "BugBoard.h"
 
 class Ant_Harvester : public Ant{
-    Ant_Harvester();
+
     ~Ant_Harvester();
     Ant_Harvester & operator=(Ant_Harvester & right);
 
+    void die() override ;
+
     void attack();
     std::string print() override;
+
+public:
+    Ant_Harvester();
+    Ant_Harvester(int pos);
+    static const int cost = 2;
 };
 
 

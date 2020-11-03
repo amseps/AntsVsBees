@@ -9,12 +9,18 @@
 #include "BugBoard.h"
 
 class Ant_LongThrow : public Ant{
-    Ant_LongThrow();
     ~Ant_LongThrow();
     Ant_LongThrow & operator=(Ant_LongThrow & right);
+
+    void die() override ;
     void attack();
 
     std::string print() override;
+
+public:
+    Ant_LongThrow();
+    Ant_LongThrow(int pos);
+    static const int cost = 3;
 };
 
 

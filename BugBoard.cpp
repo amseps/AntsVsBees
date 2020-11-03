@@ -40,7 +40,7 @@ Bug* BugBoard::isAntHere(int index) {
 void BugBoard::listItems() {
     for(int i = 0 ; i < bugBoard.size(); i++){
         for(int g = 0 ; g < bugBoard[i].size() ; g++){
-            cout << bugBoard[i][g]->print() << " ";
+            cout << bugBoard[i][g]->myID << " ";
         }
     }
 }

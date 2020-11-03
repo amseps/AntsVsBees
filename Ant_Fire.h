@@ -9,12 +9,19 @@
 #include "AntsVsBees.h"
 
 class Ant_Fire : public Ant{
-    Ant_Fire();
     ~Ant_Fire();
     Ant_Fire & operator=(Ant_Fire & right);
 
+    void die() override ;
+
     virtual void attack();
     std::string print() override;
+
+public:
+    Ant_Fire();
+    Ant_Fire(int pos);
+
+    static const int cost = 4;
 };
 
 

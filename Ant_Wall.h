@@ -9,12 +9,18 @@
 #include "BugBoard.h"
 
 class Ant_Wall : public Ant{
-    Ant_Wall();
     ~Ant_Wall();
     Ant_Wall & operator=(Ant_Wall & right);
 
+    void die() override ;
+
     void attack();
     std::string print() override;
+public:
+    Ant_Wall();
+    Ant_Wall(int pos);
+
+    static const int cost = 4;
 };
 
 

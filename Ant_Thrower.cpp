@@ -21,3 +21,19 @@ void Ant_Thrower::attack(){
 std::string Ant_Thrower::print() {
     return "[Thrower (" + to_string(armor) +"/1)]";
 }
+
+Ant_Thrower::Ant_Thrower(int pos) {
+    myID = Bug::bugID::ANT_THROWER; //I feel that I should be implementing the second half of these in the super BUG class
+    armor = 1;
+    position = pos;
+    BugBoard::bugBoard[pos].push_back(this);
+    innerpos = BugBoard::bugBoard[pos].size()-1;
+}
+
+void Ant_Thrower::die() {
+    cout << "\n*Thrower is slain!*\n";
+    BugBoard::bugBoard[position].erase(BugBoard::bugBoard[position].begin() + innerpos);
+    for(int i = 0; i < BugBoard::bugBoard[position].size(); i++) {
+        BugBoard::bugBoard[position][i]->innerpos--; //lower the following values if dead individual wasn't the end of the mf list
+    }
+}

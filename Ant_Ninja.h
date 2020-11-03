@@ -9,13 +9,17 @@
 #include "BugBoard.h"
 
 class Ant_Ninja : public Ant{
-    Ant_Ninja();
     ~Ant_Ninja();
     Ant_Ninja & operator=(Ant_Ninja & right);
 
+    void die() override ;
     void attack();
 
     std::string print() override;
+public:
+    Ant_Ninja();
+    Ant_Ninja(int pos);
+    static const int cost = 6;
 };
 
 
