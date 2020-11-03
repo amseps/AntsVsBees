@@ -11,12 +11,12 @@ void Ant_LongThrow::attack() {
     before = position -4;
     for(int i = after; i < BugBoard::boardSize; i++){
         for(int g = 0 ; g < BugBoard::bugBoard[i].size(); g++){
-            if(BugBoard::bugBoard[i][g].myID == Bug::bugID::BEE) BugBoard::bugBoard[i][g].takeDamage(1);
+            if(BugBoard::bugBoard[i][g]->myID == Bug::bugID::BEE) BugBoard::bugBoard[i][g]->takeDamage(1);
         }
     }
     for(int i = 0; i <= before; i++){
         for(int g = 0 ; g < BugBoard::bugBoard[i].size(); g++){
-            if(BugBoard::bugBoard[i][g].myID == Bug::bugID::BEE) BugBoard::bugBoard[i][g].takeDamage(1);
+            if(BugBoard::bugBoard[i][g]->myID == Bug::bugID::BEE) BugBoard::bugBoard[i][g]->takeDamage(1);
         }
     }
 }

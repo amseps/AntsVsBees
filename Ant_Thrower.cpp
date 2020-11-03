@@ -11,7 +11,7 @@ Ant_Thrower::Ant_Thrower() {
 
 void Ant_Thrower::attack(){
     for(int i = 0 ; i < BugBoard::bugBoard[position].size(); i++){
-        if(BugBoard::bugBoard[position][i].myID == Bug::bugID::BEE){
+        if(BugBoard::bugBoard[position][i]->myID == Bug::bugID::BEE){
             BugBoard::bugBoard[position][i];
             break;
         }

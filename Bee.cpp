@@ -16,22 +16,23 @@ Bee::Bee(int pos){
     myID = Bug::bugID::BEE;
     armor = 3;
     position = pos;
-    BugBoard::bugBoard[pos].push_back(*this);
+    BugBoard::bugBoard[pos].push_back(this);
     innerpos = BugBoard::bugBoard[pos].size()-1;
 }
 
 
 
 void Bee::attack() {
-    for(int i = 0; i < BugBoard::bugBoard[position].size(); i++){
-        if(BugBoard::bugBoard[position][i].myID != Bug::bugID::BEE && BugBoard::bugBoard[position][i].myID == Bug::bugID::ANT_BODYGUARD){// if it's not a bee and is a bodyguard
-            BugBoard::bugBoard[position][i].takeDamage(1);
+    vector<Bug*> a = BugBoard::bugBoard[position];
+    for(int i = 0; i < a.size(); i++){
+        if(a[i]->myID != Bug::bugID::BEE && a[i]->myID == Bug::bugID::ANT_BODYGUARD){// if it's not a bee and is a bodyguard
+            a[i]->takeDamage(1);
             return;
         }
     }
-    for(int i = 0; i < BugBoard::bugBoard[position].size(); i++){
-        if(BugBoard::bugBoard[position][i].myID != Bug::bugID::BEE){// if it's not a bee and is a bodyguard
-            BugBoard::bugBoard[position][i].takeDamage(1);
+    for(int i = 0; i < a.size(); i++){
+        if(a[i]->myID != Bug::bugID::BEE){// if it's not a bee and is a bodyguard
+            a[i]->takeDamage(1);
             return;
         }
     }
@@ -40,14 +41,15 @@ void Bee::attack() {
 void Bee::moveForward() {
     if(position == 0) return;
     for(int i = 0; i < BugBoard::bugBoard[position].size(); i++){
-        if(BugBoard::bugBoard[position][i].myID != Bug::bugID::BEE && BugBoard::bugBoard[position][i].myID != Bug::bugID::ANT_NINJA){// if it's not a bee and is not a ninja
+        if(BugBoard::bugBoard[position][i]->myID != Bug::bugID::BEE && BugBoard::bugBoard[position][i]->myID != Bug::bugID::ANT_NINJA){// if it's not a bee and is not a ninja
             return; //then can't move forward
         }
     }
-    BugBoard::bugBoard[position-1].push_back(*this);
-    position -= 1;
-    innerpos = BugBoard::bugBoard[position].size()-1;
-    delete &BugBoard::bugBoard[position][innerpos];
+    BugBoard::bugBoard[position-1].push_back(this);
+    swap(BugBoard::bugBoard[position][innerpos], BugBoard::bugBoard[position][BugBoard::bugBoard[position].size()-1]); // swap this element with last element
+    BugBoard::bugBoard[position].resize(BugBoard::bugBoard[position].size()-1); //then shrink by one
+    position -= 1; // update to new position
+    innerpos = BugBoard::bugBoard[position].size()-1; // it's on the end of the next vector
 }
 
 void Bee::die() {

@@ -39,12 +39,13 @@ class Bee;
 class BugBoard {
 public:
     static const int boardSize = 10;
-    static vector<vector<Bug>> bugBoard;
+    static vector<vector<Bug*>> bugBoard;
     static int antFood;
     Bug* isBodyguardHere(int index);
     Bug* isBeeHere(int index);
     Bug* isAntHere(int index);
 
+    static void listItems();
     BugBoard();
     //static only class
 };

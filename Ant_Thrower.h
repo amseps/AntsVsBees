@@ -5,7 +5,7 @@
 #ifndef ANTSVSBEES_ANT_THROWER_H
 #define ANTSVSBEES_ANT_THROWER_H
 
-
+#include <iostream>
 #include "Ant.h "
 #include "BugBoard.h"
 

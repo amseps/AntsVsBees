@@ -17,7 +17,7 @@ void Ant_ShortThrow::attack() {
     if(to > BugBoard::boardSize) to = BugBoard::boardSize;
     for(int i = from; i <= to; i++){
         for(int g = 0 ; g < BugBoard::bugBoard[i].size(); g++){
-            if(BugBoard::bugBoard[i][g].myID == Bug::bugID::BEE) BugBoard::bugBoard[i][g].takeDamage(1);
+            if(BugBoard::bugBoard[i][g]->myID == Bug::bugID::BEE) BugBoard::bugBoard[i][g]->takeDamage(1);
         }
     }
 }

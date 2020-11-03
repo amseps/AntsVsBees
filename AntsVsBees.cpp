@@ -9,7 +9,6 @@
 using namespace std;
 
 void AntsVsBees::runGame(){
-    BugBoard *b = new BugBoard();
     cout << "\n\n\t\t>>>WELCOME TO ANTS VS BEES<<<"
             "\n\t#You are the glorious red ant army, fighting off disgusting dog bees,"
             "\n\t#place your forces strategically... They are cunning...\n\n";
@@ -22,6 +21,7 @@ bool AntsVsBees::runTurn() {
     newBee();
     displayStats();
     displayBoard();
+    //BugBoard::listItems();
     options();
     runActions();
     return isGameOver();
@@ -36,10 +36,11 @@ void AntsVsBees::displayStats() {
 }
 
 void AntsVsBees::displayBoard() { //sure hope your terminal is monospace
-    for(int i = 0 ; i < BugBoard::boardSize; i++){
+    for(int i = 0 ; i < BugBoard::bugBoard.size(); i++){
         cout << "Row " << i << ":\t";
-        for(int g = 0; g < BugBoard::bugBoard[i].size(); i++){
-            cout << BugBoard::bugBoard[i][g].print() << " ";
+        vector<Bug*> a = BugBoard::bugBoard[i];
+        for(int g = 0; g < a.size(); g++){
+            cout << a[g]->print() << " ";
         }
         cout << "\n";
     }
@@ -47,27 +48,36 @@ void AntsVsBees::displayBoard() { //sure hope your terminal is monospace
 
 void AntsVsBees::runActions() {
     for(int i = 0 ; i < BugBoard::boardSize; i++){
-        for(int g = 0; g < BugBoard::bugBoard[i].size(); i++){
-            BugBoard::bugBoard[i][g].attack();
+        vector<Bug*> a = BugBoard::bugBoard[i];
+        for(int g = 0; g < a.size(); g++){
+            a[g]->attack();
         }
     }
     for(int i = 0 ; i < BugBoard::boardSize; i++){
-        for(int g = 0; g < BugBoard::bugBoard[i].size(); i++){
-            BugBoard::bugBoard[i][g].moveForward();
+        vector<Bug*> a = BugBoard::bugBoard[i];
+        for(int g = 0; g < a.size(); g++){
+            a[g]->moveForward();
         }
     }
 }
 
 void AntsVsBees::options() {
-    cout << "TODO: displayStats" << endl;
+    cout << "\nWhat will you do commander?"
+            "\n[0:Nothing! ; 1:Harvester ; 2: FireAnt ; 3: LongThrower ; 4: ShortThrower ; 5: Thrower ; 6:Bodyguard : 7: Ninja ; 8: Wall]";
+    string s;
+    cout << "\n>>>";
+    cin >> s;
 }
 
 bool AntsVsBees::isGameOver() {
     if(BugBoard::bugBoard[0].size() < 1) return false; // no bugs at all
     for(int i = 0 ; i < BugBoard::bugBoard[0].size(); i++){
-        if(! BugBoard::bugBoard[0][i].myID == Bug::bugID::BEE ) return false; // if there's a bug that's not a bee;
+        if(! BugBoard::bugBoard[0][i]->myID == Bug::bugID::BEE ) return false; // if there's a bug that's not a bee;
     }
-    if(BugBoard::bugBoard[0].size() > 0 && BugBoard::bugBoard[0][0].myID == Bug::bugID::BEE){
+    if(BugBoard::bugBoard[0].size() > 0 && BugBoard::bugBoard[0][0]->myID == Bug::bugID::BEE){
+        cout << "\n************************************************************"
+                "\n### NOOO!!! NOT THE BEES!! Your colony has been destroyed! ###"
+                "\n************************************************************";
         return true;
     }
     return false;

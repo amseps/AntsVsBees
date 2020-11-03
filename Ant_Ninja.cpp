@@ -11,8 +11,8 @@ Ant_Ninja::Ant_Ninja() {
 
 void Ant_Ninja::attack() {
     for(int i = 0 ; i < BugBoard::bugBoard[position].size(); i++){
-        if(BugBoard::bugBoard[position][i].myID == Bug::bugID::BEE){
-            BugBoard::bugBoard[position][i].takeDamage(1);
+        if(BugBoard::bugBoard[position][i]->myID == Bug::bugID::BEE){
+            BugBoard::bugBoard[position][i]->takeDamage(1);
         }
     }
 }
