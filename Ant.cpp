@@ -9,6 +9,5 @@ Ant::Ant() {
     myID = ANT;
 }
 
-void Ant::attack() {
-
+void Ant::die(){
 }

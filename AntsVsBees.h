@@ -17,6 +17,7 @@ private:
     void runActions();
     void options();
     bool isGameOver();
+    void newBee();
 
     int input_getLineInt();
 

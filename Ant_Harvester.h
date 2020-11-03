@@ -6,6 +6,7 @@
 #define ANTSVSBEES_ANT_HARVESTER_H
 
 #include "Ant.h "
+#include "BugBoard.h"
 
 class Ant_Harvester : public Ant{
     Ant_Harvester();
@@ -13,6 +14,7 @@ class Ant_Harvester : public Ant{
     Ant_Harvester & operator=(Ant_Harvester & right);
 
     void attack();
+    std::string print() override;
 };
 
 

@@ -6,6 +6,7 @@
 #define ANTSVSBEES_ANT_NINJA_H
 
 #include "Ant.h"
+#include "BugBoard.h"
 
 class Ant_Ninja : public Ant{
     Ant_Ninja();
@@ -13,6 +14,8 @@ class Ant_Ninja : public Ant{
     Ant_Ninja & operator=(Ant_Ninja & right);
 
     void attack();
+
+    std::string print() override;
 };
 
 

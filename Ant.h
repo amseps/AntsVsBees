@@ -5,19 +5,21 @@
 #ifndef ANTSVSBEES_ANT_H
 #define ANTSVSBEES_ANT_H
 
+class BugBoard;
+class Ant;
 
 #include "Bug.h"
+//#include "BugBoard.h"
 
 class Ant : public Bug {
 
 public:
 
-    void takeDamage();
-    virtual void attack();
+    void die() override;
+    void attack() override{};
+    void moveForward() override{};
 
-    int position = 0;
-    int foodCost = 1;
-    int armor = 1;
+    int foodCost = -1;
 
 
     Ant();

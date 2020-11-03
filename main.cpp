@@ -12,5 +12,7 @@ void runTests(){
 int main() {
     std::cout << "Hello, World!" << std::endl;
     cout << BugBoard::boardSize << " " << BugBoard::antFood;
+    AntsVsBees *a = new AntsVsBees();
+    a->runGame();
     return 0;
 }

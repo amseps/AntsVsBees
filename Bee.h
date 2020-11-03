@@ -5,18 +5,23 @@
 #ifndef ANTSVSBEES_BEE_H
 #define ANTSVSBEES_BEE_H
 
+class BugBoard;
+class Bee;
+
 #include "Bug.h"
+#include "BugBoard.h"
 
 class Bee : public Bug{
 public:
 
     Bee();
+    Bee(int position);
+    void die() override;
+    void attack() override;
+    void moveForward() override;
 
-    int armor = 3;
-    int position = 9;
 
-    void attack();
-    void moveForward();
+    std::string print() override;
 };
 
 

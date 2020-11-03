@@ -6,8 +6,13 @@
 
 Ant_Wall::Ant_Wall() {
     myID = ANT_WALL;
+    armor = 4;
 }
 
 void Ant_Wall::attack() {
-    Ant::attack();
+    //doesn't attack
+}
+
+std::string Ant_Wall::print() {
+    return "[Wall (" + to_string(armor) + "/4)]";
 }

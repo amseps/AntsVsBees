@@ -7,7 +7,6 @@
 
 class BugBoard;
 #include "BugBoard.h"
-
 #include "Ant.h"
 
 class Ant_Bodyguard : public Ant{
@@ -15,7 +14,8 @@ class Ant_Bodyguard : public Ant{
     ~Ant_Bodyguard();
     Ant_Bodyguard & operator=(Ant_Bodyguard & right);
 
-    void attack();
+    void attack() override;
+    std::string print() override;
 };
 
 

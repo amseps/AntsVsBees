@@ -7,6 +7,7 @@
 
 
 #include "Ant.h"
+#include "BugBoard.h"
 
 class Ant_ShortThrow : public Ant{
     Ant_ShortThrow();
@@ -14,6 +15,8 @@ class Ant_ShortThrow : public Ant{
     Ant_ShortThrow & operator=(Ant_ShortThrow & right);
 
     void attack();
+
+    std::string print() override;
 };
 
 #endif //ANTSVSBEES_ANT_SHORTTHROW_H
